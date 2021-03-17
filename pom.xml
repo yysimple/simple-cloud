@@ -154,12 +154,12 @@
                 <version>${hutools.version}</version>
             </dependency>
 
-            <!-- lombok的版本 -->
-            <dependency>
+            <!-- lombok的版本 可以不用（springboot会管理版本）-->
+            <!--<dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
-            </dependency>
+            </dependency>-->
 
             <!-- excel工具 -->
             <dependency>
