@@ -16,7 +16,7 @@ public class ServiceNameConstants {
     public static final String AUTH_SERVICE = "simple-auth";
 
     /**
-     * 系统模块的service_id
+     * 业务基础模块的service_id
      */
-    public static final String SYSTEM_SERVICE = "simple-business-base";
+    public static final String BUSINESS_BASE_SERVICE = "simple-business-base";
 }
