@@ -13,11 +13,17 @@
     <description>安全模块</description>
 
     <dependencies>
-        <!-- Spring Security Oauth2 -->
+        <!-- Spring Cloud SR9的Spring Security Oauth2 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
+
+        <!-- Spring Cloud 2020.0.1 安全模块-->
+        <!--<dependency>
+            <groupId>org.springframework.security.oauth.boot</groupId>
+            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+        </dependency>-->
 
         <!-- api模块，需要用到用户信息 -->
         <dependency>

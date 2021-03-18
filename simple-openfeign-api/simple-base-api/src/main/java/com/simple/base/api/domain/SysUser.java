@@ -144,4 +144,17 @@ public class SysUser extends BaseEntity {
     public SysUser(Long userId) {
         this.userId = userId;
     }
+
+    /**
+     * 判断是否是管理员
+     *
+     * @return
+     */
+    public boolean isAdmin() {
+        return isAdmin(this.userId);
+    }
+
+    public static boolean isAdmin(Long userId) {
+        return userId != null && 1L == userId;
+    }
 }
