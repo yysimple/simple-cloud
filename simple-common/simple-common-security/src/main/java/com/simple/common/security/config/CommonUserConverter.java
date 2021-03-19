@@ -17,7 +17,17 @@ import java.util.Map;
 /**
  * 项目: simple-cloud
  * <p>
- * 功能描述:
+ * 功能描述: 为了避免一直进行 check-token，
+ * check-token的目的：
+ *   就是为了最后拿到用户的信息，当用户携带token 请求资源服务器的资源时,
+ *   OAuth2AuthenticationProcessingFilter 拦截token，进行token 和userdetails 过程，
+ *   把无状态的token 转化成用户信息。
+ *
+ * - 用户携带token 请求资源服务器
+ * - 资源服务器拦截器 携带token 去认证服务器 调用tokenstore 对token 合法性校验
+ * - 资源服务器拿到token，默认只会含有用户名信息
+ * - 通过用户名调用userdetailsservice.loadbyusername 查询用户全部信息
+ * 如上步骤在实际使用，会造成认证中心的负载压力过大，成为造成整个系统瓶颈的关键点。
  *
  * @author: WuChengXing
  * @create: 2021-03-18 22:28

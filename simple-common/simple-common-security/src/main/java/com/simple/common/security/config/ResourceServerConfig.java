@@ -32,12 +32,22 @@ import javax.annotation.Resource;
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
+    /**
+     * OAuth2资源的配置属性。
+     */
     @Resource
     private ResourceServerProperties resourceServerProperties;
 
+    /**
+     * OAuth2客户端的配置属性。
+     */
     @Resource
     private OAuth2ClientProperties oAuth2ClientProperties;
 
+    /**
+     * 放行路径
+     * @return
+     */
     @Bean
     public AuthIgnoreConfig authIgnoreConfig() {
         return new AuthIgnoreConfig();
@@ -53,8 +63,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Bean
     public ResourceServerTokenServices tokenServices() {
+        // 查询/ check_token端点以获取访问令牌的内容。
         RemoteTokenServices remoteTokenServices = new RemoteTokenServices();
+        // 默认访问令牌转换器
         DefaultAccessTokenConverter accessTokenConverter = new DefaultAccessTokenConverter();
+        // 令牌中代表用户的数据部分的转换器。
         UserAuthenticationConverter userTokenConverter = new CommonUserConverter();
         accessTokenConverter.setUserTokenConverter(userTokenConverter);
         remoteTokenServices.setCheckTokenEndpointUrl(resourceServerProperties.getTokenInfoUri());
