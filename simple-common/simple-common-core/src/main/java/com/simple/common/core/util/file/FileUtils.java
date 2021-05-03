@@ -12,7 +12,7 @@ import java.net.URLEncoder;
  * @author: WuChengXing
  * @create: 2021-03-17 23:14
  **/
-public class FileUtils {
+public class FileUtils extends org.apache.commons.io.FileUtils {
     public static String FILENAME_PATTERN = "[a-zA-Z0-9_\\-\\|\\.\\u4e00-\\u9fa5]+";
 
     /**

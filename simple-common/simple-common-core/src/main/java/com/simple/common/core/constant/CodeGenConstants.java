@@ -47,35 +47,35 @@ public class CodeGenConstants {
     /**
      * 数据库字符串类型
      */
-    public static final String[] COLUMN_TYPE_STR = {"char", "varchar", "narchar", "varchar2", "tinytext", "text",
+    public static final String[] COLUMNTYPE_STR = {"char", "varchar", "narchar", "varchar2", "tinytext", "text",
             "mediumtext", "longtext"};
 
     /**
      * 数据库时间类型
      */
-    public static final String[] COLUMN_TYPE_TIME = {"datetime", "time", "date", "timestamp"};
+    public static final String[] COLUMNTYPE_TIME = {"datetime", "time", "date", "timestamp"};
 
     /**
      * 数据库数字类型
      */
-    public static final String[] COLUMN_TYPE_NUMBER = {"tinyint", "smallint", "mediumint", "int", "number", "integer",
+    public static final String[] COLUMNTYPE_NUMBER = {"tinyint", "smallint", "mediumint", "int", "number", "integer",
             "bigint", "float", "float", "double", "decimal"};
 
     /**
      * 页面不需要编辑字段
      */
-    public static final String[] COLUMN_NAME_NOT_EDIT = {"id", "create_by", "create_time", "del_flag"};
+    public static final String[] COLUMNNAME_NOT_EDIT = {"id", "create_by", "create_time", "del_flag"};
 
     /**
      * 页面不需要显示的列表字段
      */
-    public static final String[] COLUMN_NAME_NOT_LIST = {"id", "create_by", "create_time", "del_flag", "update_by",
+    public static final String[] COLUMNNAME_NOT_LIST = {"id", "create_by", "create_time", "del_flag", "update_by",
             "update_time"};
 
     /**
      * 页面不需要查询字段
      */
-    public static final String[] COLUMN_NAME_NOT_QUERY = {"id", "create_by", "create_time", "del_flag", "update_by",
+    public static final String[] COLUMNNAME_NOT_QUERY = {"id", "create_by", "create_time", "del_flag", "update_by",
             "update_time", "remark"};
 
     /**
@@ -141,7 +141,7 @@ public class CodeGenConstants {
     /**
      * 高精度计算类型
      */
-    public static final String TYPE_BIG_DECIMAL = "BigDecimal";
+    public static final String TYPE_BIGDECIMAL = "BigDecimal";
 
     /**
      * 时间类型

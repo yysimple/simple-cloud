@@ -118,6 +118,14 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- 这个是为了使用 校验类报错的情况 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.18.Final</version>
+        </dependency>
+
+
     </dependencies>
 
 
