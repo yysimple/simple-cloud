@@ -5,6 +5,7 @@ import com.simple.common.core.annotation.Excel.ColumnType;
 import com.simple.common.core.web.domain.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.apache.ibatis.type.Alias;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
