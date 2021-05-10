@@ -18,5 +18,5 @@ public class ServiceNameConstants {
     /**
      * 业务基础模块的service_id
      */
-    public static final String BUSINESS_BASE_SERVICE = "simple-business-base";
+    public static final String BUSINESS_SERVICE = "simple-base";
 }
